@@ -5,15 +5,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css"/>
-        <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+        <script src='https://npmcdn.com/@turf/turf/turf.js'></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+        <script src="assets/js/polybool.js"></script>
+        <!--<script src="assets/js/clipper.js"></script>
+        <script src="assets/js/L.Clipper.js"></script>-->
     </head>
     <body>
+        <div>
+            <div>
+              <input type="checkbox" id="regions" name="regions">
+              <label for="regions">Regiões</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="microregions" name="microregions">
+              <label for="microregions">Microrregiões</label>
+            </div>
+        </div>
         <div id="mapid"></div>
+        <script src="http://d3js.org/d3.v3.min.js"></script> 
+        <script src="assets/data/sheet/dados.js"></script>
         <script src="assets/data/cities.js"></script>
         <script src="assets/data/states.js"></script>
+        <script src="assets/js/1m2-data.js"></script>
         <script src="assets/js/map.js"></script>
         <script src="assets/js/map-controller.js"></script>
+        <script type="module" src="assets/js/objects.js"></script>
+        <script type="module" src="assets/js/render.js"></script>
     </body>
 </html>

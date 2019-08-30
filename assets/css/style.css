@@ -1,3 +1,11 @@
 #mapid { 
     height: 900px; 
 }
+
+p, label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}

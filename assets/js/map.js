@@ -1,4 +1,4 @@
-map = null;
+var map = null;
 controller = null;
 
 window.onload = function(){
@@ -15,5 +15,14 @@ window.onload = function(){
     
     controller = new Controller();
     controller.init();
+    
+    
+    /*
+    var x = "./assets/data/goias.csv";
+    d3.text(x, function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                console.log(parsedCSV);
+            });
+            */
 }
 
