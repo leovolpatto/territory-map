@@ -34,16 +34,17 @@ function Controller() {
 
     selectCity = function (layer) {
         var a = layer.target;
-        a.options.color = '#c19d32';
-        a.options.color = '#c19d32';
-        a.options.fill = true;
-        a.options.fillcolor = '#000';
+        //a.options.color = '#c19d32';
+        //a.options.color = '#c19d32';
+        //a.options.fill = true;
+        //a.options.fillcolor = '#000';
 
         // create a red polygon from an array of LatLng points
         var latlngs = layer.target._latlngs;
-        var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+        //var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+        var polygon = L.polygon(latlngs);
         // zoom the map to the polygon
-        map.fitBounds(polygon.getBounds());
+        //map.fitBounds(polygon.getBounds());
     }
 
     draw1M2Cities = function (data) {
